@@ -71,11 +71,11 @@ describe("API", () => {
     } = builders;
 
     expect(formatDoc([indent(hardline), indent(literalline)])).toBe(
-      "[indent(hardline), indent(literalline)]"
+      "[ indent(hardline), indent(literalline) ]"
     );
 
     expect(formatDoc(fill(["foo", hardline, "bar", literalline, "baz"]))).toBe(
-      'fill(["foo", hardline, "bar", literalline, "baz"])'
+      'fill([ "foo", hardline, "bar", literalline, "baz" ])'
     );
 
     expect(
@@ -83,18 +83,18 @@ describe("API", () => {
         // The argument of fill must not be passed to cleanDoc because it's not a doc
         fill(cleanDoc(["foo", literalline, "bar"])) // invalid fill
       )
-    ).toBe('fill(["foo", literallineWithoutBreakParent, breakParent, "bar"])');
+    ).toBe('fill([ "foo", literallineWithoutBreakParent, breakParent, "bar" ])');
 
     expect(
       formatDoc(indentIfBreak(group(["1", line, "2"]), { groupId: "Q" }))
-    ).toBe('indentIfBreak(group(["1", line, "2"]), { groupId: "Q" })');
+    ).toBe('indentIfBreak(group([ "1", line, "2" ]), { groupId: "Q" })');
 
     expect(formatDoc(label("foo", group(["1", line, "2"])))).toBe(
-      'label("foo", group(["1", line, "2"]))'
+      'label("foo", group([ "1", line, "2" ]))'
     );
 
     expect(formatDoc([ifBreak("a", "b"), ifBreak("a"), ifBreak("", "b")])).toBe(
-      '[ifBreak("a", "b"), ifBreak("a"), ifBreak("", "b")]'
+      '[ ifBreak("a", "b"), ifBreak("a"), ifBreak("", "b") ]'
     );
   });
 });

@@ -29,7 +29,7 @@ export const X = {
 =====================================output=====================================
 // @flow
 
-let [x, y] = [1, 2];
+let [ x, y ] = [ 1, 2 ];
 
 /**
  * Test what happens when the destructuring is unevaluated. In this case,
@@ -39,11 +39,11 @@ let [x, y] = [1, 2];
  */
 export const X = {
   returnsATuple: function (): [number, number] {
-    return [1, 2];
+    return [ 1, 2 ];
   },
 
   test: function () {
-    let [a, b] = this.returnsATuple();
+    let [ a, b ] = this.returnsATuple();
   },
 };
 
@@ -356,7 +356,7 @@ foo();
 str;
 
 type Point = [number, string];
-const x: Point = [1, "foo"];
+const x: Point = [ 1, "foo" ];
 type MyStr = "cool";
 const y: MyStr = "cool";
 type MyBool = true;

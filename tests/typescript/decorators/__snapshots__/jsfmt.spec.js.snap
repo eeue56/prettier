@@ -206,8 +206,8 @@ class Class5 {
 class Class6 {
   method(@Decorator({}) { prop1 }: Type) {}
   method(@Decorator({}) { prop1 }: Type) {}
-  method(@Decorator([]) { prop1 }: Type) {}
-  method(@Decorator([]) { prop1 }: Type) {}
+  method(@Decorator([ ]) { prop1 }: Type) {}
+  method(@Decorator([ ]) { prop1 }: Type) {}
 }
 
 ================================================================================

@@ -219,7 +219,7 @@ React.createClass(({}: {})); // error: spec must be [ ] exact and [x] sealed
 import React from "react";
 
 const A = React.createClass({
-  mixins: [{ propTypes: { foo: React.PropTypes.string.isRequired } }],
+  mixins: [ { propTypes: { foo: React.PropTypes.string.isRequired } } ],
   propTypes: { bar: React.PropTypes.number.isRequired },
   m() {
     (this.props.foo: empty); // error: string ~> empty
@@ -284,7 +284,7 @@ const F = React.createClass({
 });
 
 const G = React.createClass({
-  mixins: [],
+  mixins: [ ],
   autobind: true,
   statics: {},
   m() {
@@ -968,17 +968,17 @@ var Example = React.createClass({
   },
 });
 
-var ok_empty = <Example arr={[]} />;
-var ok_numbers = <Example arr={[1, 2]} />;
+var ok_empty = <Example arr={[ ]} />;
+var ok_numbers = <Example arr={[ 1, 2 ]} />;
 
 var fail_missing = <Example />;
 var fail_not_array = <Example arr={2} />;
-var fail_mistyped_elems = <Example arr={[1, "foo"]} />;
+var fail_mistyped_elems = <Example arr={[ 1, "foo" ]} />;
 
 /* Since the \`number\` proptype argument is not required, React will actually
    allow \`null\` and \`undefined\` elements in the \`arr\` prop, but Flow has
    currently ignores the innter prop type's required flag. */
-var todo_required = <Example arr={[null]} />;
+var todo_required = <Example arr={[ null ]} />;
 
 var OptionalExample = React.createClass({
   propTypes: {
@@ -987,8 +987,8 @@ var OptionalExample = React.createClass({
 });
 
 <OptionalExample />; // OK
-<OptionalExample arr={[0]} />; // OK
-<OptionalExample arr={[""]} />; // error: string ~> number
+<OptionalExample arr={[ 0 ]} />; // OK
+<OptionalExample arr={[ "" ]} />; // error: string ~> number
 
 var AnyExample = React.createClass({
   propTypes: {
@@ -997,7 +997,7 @@ var AnyExample = React.createClass({
 });
 
 <AnyExample arr={0} />; // error: still needs to be an array
-<AnyExample arr={[0]} />; // OK
+<AnyExample arr={[ 0 ]} />; // OK
 
 var InvalidExample = React.createClass({
   propTypes: {
@@ -1542,10 +1542,10 @@ var NonLiteralElemExample = React.createClass({
 var React = require("react");
 var Example = React.createClass({
   propTypes: {
-    str: React.PropTypes.oneOf(["foo", "bar"]),
-    num: React.PropTypes.oneOf([0, 1, 2]),
-    bool: React.PropTypes.oneOf([true]),
-    mixed: React.PropTypes.oneOf(["foo", 0, true]),
+    str: React.PropTypes.oneOf([ "foo", "bar" ]),
+    num: React.PropTypes.oneOf([ 0, 1, 2 ]),
+    bool: React.PropTypes.oneOf([ true ]),
+    mixed: React.PropTypes.oneOf([ "foo", 0, true ]),
   },
 });
 
@@ -1564,7 +1564,7 @@ var Example = React.createClass({
 
 var RequiredExample = React.createClass({
   propTypes: {
-    p: React.PropTypes.oneOf([]).isRequired,
+    p: React.PropTypes.oneOf([ ]).isRequired,
   },
 });
 
@@ -1572,7 +1572,7 @@ var RequiredExample = React.createClass({
 
 var EmptyExample = React.createClass({
   propTypes: {
-    nil: React.PropTypes.oneOf([]), // i.e., \`empty\`
+    nil: React.PropTypes.oneOf([ ]), // i.e., \`empty\`
   },
 });
 
@@ -1588,7 +1588,7 @@ var AnyArrayExample = React.createClass({
 
 var AnyElemExample = React.createClass({
   propTypes: {
-    any: React.PropTypes.oneOf(["foo", (0: any)]),
+    any: React.PropTypes.oneOf([ "foo", (0: any) ]),
   },
 });
 
@@ -1596,7 +1596,7 @@ var AnyElemExample = React.createClass({
 
 var DynamicArrayExample = React.createClass({
   propTypes: {
-    dyn: React.PropTypes.oneOf(([]: Array<string>)),
+    dyn: React.PropTypes.oneOf(([ ]: Array<string>)),
   },
 });
 
@@ -1604,7 +1604,7 @@ var DynamicArrayExample = React.createClass({
 
 var DynamicElemExample = React.createClass({
   propTypes: {
-    dyn: React.PropTypes.oneOf(["foo", ("": string)]),
+    dyn: React.PropTypes.oneOf([ "foo", ("": string) ]),
   },
 });
 
@@ -1620,7 +1620,7 @@ var InvalidArrayExample = React.createClass({
 
 var NonLiteralElemExample = React.createClass({
   propTypes: {
-    p: React.PropTypes.oneOf([{}]), // OK: allow non-literals
+    p: React.PropTypes.oneOf([ {} ]), // OK: allow non-literals
   },
 });
 <NonLiteralElemExample p={0} />; // OK, result is unknown/any
@@ -1771,7 +1771,7 @@ var todo_required = <Example prop={null} />;
 
 var OptionalExample = React.createClass({
   propTypes: {
-    p: React.PropTypes.oneOfType([React.PropTypes.string]),
+    p: React.PropTypes.oneOfType([ React.PropTypes.string ]),
   },
 });
 
@@ -1781,7 +1781,7 @@ var OptionalExample = React.createClass({
 
 var EmptyExample = React.createClass({
   propTypes: {
-    nil: React.PropTypes.oneOfType([]), // i.e., \`empty\`
+    nil: React.PropTypes.oneOfType([ ]), // i.e., \`empty\`
   },
 });
 
@@ -1797,7 +1797,7 @@ var AnyArrayExample = React.createClass({
 
 var AnyElemExample = React.createClass({
   propTypes: {
-    any: React.PropTypes.oneOfType([React.PropTypes.string, (0: any)]),
+    any: React.PropTypes.oneOfType([ React.PropTypes.string, (0: any) ]),
   },
 });
 
@@ -1805,7 +1805,7 @@ var AnyElemExample = React.createClass({
 
 var DynamicArrayExample = React.createClass({
   propTypes: {
-    dyn: React.PropTypes.oneOfType(([]: Array<Function>)),
+    dyn: React.PropTypes.oneOfType(([ ]: Array<Function>)),
   },
 });
 
@@ -1832,7 +1832,7 @@ var InvalidArrayExample = React.createClass({
 
 var InvalidElemExample = React.createClass({
   propTypes: {
-    p: React.PropTypes.oneOfType([{}]), // error: expected prop type, got {}
+    p: React.PropTypes.oneOfType([ {} ]), // error: expected prop type, got {}
   },
 });
 

@@ -25,13 +25,13 @@ function g() {
 }
 
 =====================================output=====================================
-var a = ["..."];
+var a = [ "..." ];
 var b = a.map(function (x) {
   return 0;
 });
 var c: string = b[0]; // error: number !~> string
 
-var array = [];
+var array = [ ];
 function f() {
   array = array.map(function () {
     return "...";

@@ -89,14 +89,14 @@ const mapChargeItems = fp.flow(
 );
 
 expect(
-  new LongLongLongLongLongRange([0, 0], [0, 0])
-).toEqualAtomLongLongLongLongRange(new LongLongLongRange([0, 0], [0, 0]));
+  new LongLongLongLongLongRange([ 0, 0 ], [ 0, 0 ])
+).toEqualAtomLongLongLongLongRange(new LongLongLongRange([ 0, 0 ], [ 0, 0 ]));
 
-["red", "white", "blue", "black", "hotpink", "rebeccapurple"].reduce(
+[ "red", "white", "blue", "black", "hotpink", "rebeccapurple" ].reduce(
   (allColors, color) => {
     return allColors.concat(color);
   },
-  []
+  [ ]
 );
 
 ================================================================================
@@ -207,7 +207,7 @@ function Comp5() {
 function helloWorld() {
   useEffect(() => {
     // do something
-  }, [props.value]);
+  }, [ props.value ]);
   useEffect(() => {
     // do something
   }, [
@@ -228,7 +228,7 @@ function helloWorld() {
 function helloWorldWithReact() {
   React.useEffect(() => {
     // do something
-  }, [props.value]);
+  }, [ props.value ]);
   React.useEffect(() => {
     // do something
   }, [
@@ -255,7 +255,7 @@ function MyComponent(props) {
     // We need to disable the eslint warning here,
     // because of some complicated reason.
     // eslint-disable line react-hooks/exhaustive-deps
-    []
+    [ ]
   );
 
   return null;
@@ -264,7 +264,7 @@ function MyComponent(props) {
 function Comp1() {
   const { firstName, lastName } = useMemo(
     () => parseFullName(fullName),
-    [fullName]
+    [ fullName ]
   );
 }
 
@@ -291,7 +291,7 @@ function Comp3() {
   const { firstName, lastName } = useMemo(
     (aaa, bbb, ccc, ddd, eee, fff, ggg, hhh, iii, jjj, kkk) =>
       func(aaa, bbb, ccc, ddd, eee, fff, ggg, hhh, iii, jjj, kkk),
-    [foo, bar, baz]
+    [ foo, bar, baz ]
   );
 }
 
@@ -303,12 +303,12 @@ function Comp4() {
       (foo && baz(foo) + bar(foo) + foo && bar && baz) ||
       baz ||
       (foo && baz(foo) + bar(foo)),
-    [foo, bar, baz]
+    [ foo, bar, baz ]
   );
 }
 
 function Comp5() {
-  const { firstName, lastName } = useMemo(() => func(), [foo]);
+  const { firstName, lastName } = useMemo(() => func(), [ foo ]);
 }
 
 ================================================================================
@@ -331,14 +331,14 @@ const [ first2 ] = array.reduce(
 );
 
 =====================================output=====================================
-const [first1] = array.reduce(
-  () => [accumulator, element, accumulator, element],
-  [fullName]
+const [ first1 ] = array.reduce(
+  () => [ accumulator, element, accumulator, element ],
+  [ fullName ]
 );
 
-const [first2] = array.reduce(
-  (accumulator, element) => [accumulator, element],
-  [fullName]
+const [ first2 ] = array.reduce(
+  (accumulator, element) => [ accumulator, element ],
+  [ fullName ]
 );
 
 ================================================================================

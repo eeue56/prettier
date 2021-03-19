@@ -18,12 +18,12 @@ printWidth: 80
 =====================================output=====================================
 /* @flow */
 
-(([1, 2]: Array<number>): Iterable<number>);
-([1, 2, "hi"]: Iterable<number | string>);
-([1, 2, 3]: Iterable<*>);
+(([ 1, 2 ]: Array<number>): Iterable<number>);
+([ 1, 2, "hi" ]: Iterable<number | string>);
+([ 1, 2, 3 ]: Iterable<*>);
 
-(["hi"]: Iterable<number>); // Error string ~> number
-(["hi", 1]: Iterable<string>); // Error number ~> string
+([ "hi" ]: Iterable<number>); // Error string ~> number
+([ "hi", 1 ]: Iterable<string>); // Error number ~> string
 
 ================================================================================
 `;
@@ -316,9 +316,9 @@ printWidth: 80
 =====================================output=====================================
 /* @flow */
 
-(([]: Array<string>): Iterable<?string>); // ok, Iterable<+T>
+(([ ]: Array<string>): Iterable<?string>); // ok, Iterable<+T>
 
-(([]: Array<string>).values(): Iterable<?string>); // ok, Iterator<+T>
+(([ ]: Array<string>).values(): Iterable<?string>); // ok, Iterator<+T>
 
 ================================================================================
 `;

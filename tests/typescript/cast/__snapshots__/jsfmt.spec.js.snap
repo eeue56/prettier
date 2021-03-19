@@ -88,7 +88,7 @@ function x() {
 function y() {
   const fits = <Immutable.Map<string, any>>fits();
   const fitsObjLiteral = <Immutable.Map<string, any>>{ a: "test" };
-  const fitsArrayLiteral = <Immutable.Map<string, any>>["test", "test2"];
+  const fitsArrayLiteral = <Immutable.Map<string, any>>[ "test", "test2" ];
 
   const breakAfterCast = <Immutable.Map<string, any>>(
     someExistingConfigMap.mergeDeep(fallbackOpts)
@@ -182,7 +182,7 @@ function y() {
       never,
       "extra long"
     >
-  >["first", "second", "third"];
+  >[ "first", "second", "third" ];
 
   const insideFuncCall = myFunc(
     param1,
@@ -195,7 +195,7 @@ function y() {
 function x() {
   const fits = <PermissionsChecker<any> | undefined>(<any>permissions)[type];
   const fitsObjLiteral = <PermissionsChecker<any> | undefined>{ a: "test" };
-  const fitsArrayLiteral = <PermissionsChecker<any> | undefined>["t1", "t2"];
+  const fitsArrayLiteral = <PermissionsChecker<any> | undefined>[ "t1", "t2" ];
 
   const breakAfterCast = <PermissionsChecker<any> | undefined>(
     (<any>permissions)[receiverType]
@@ -263,7 +263,7 @@ function x() {
     | null
     | never
     | object
-  >["first", "second", "third"];
+  >[ "first", "second", "third" ];
 
   const insideFuncCall = myFunc(
     param1,
@@ -345,7 +345,7 @@ true || <x>a;
 <any>(() => {});
 
 <x>a || {};
-<x>a && [];
+<x>a && [ ];
 true || <x>a;
 <x>a + <x>b;
 (<x>a) = 1;

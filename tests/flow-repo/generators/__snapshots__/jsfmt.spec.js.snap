@@ -263,9 +263,9 @@ for (var x of examples.delegate_yield_generator()) {
   (x: number); // error: string ~> number
 }
 
-examples.delegate_next_iterable([]).next(""); // error: Iterator has no next value
+examples.delegate_next_iterable([ ]).next(""); // error: Iterator has no next value
 
-for (var x of examples.delegate_yield_iterable([])) {
+for (var x of examples.delegate_yield_iterable([ ])) {
   (x: string); // error: number ~> string
 }
 
@@ -558,12 +558,12 @@ function* delegate_return_generator() {
 function* delegate_next_iterable(xs: Array<number>) {
   yield* xs;
 }
-delegate_next_iterable([]).next(""); // error: Iterator has no next value
+delegate_next_iterable([ ]).next(""); // error: Iterator has no next value
 
 function* delegate_yield_iterable(xs: Array<number>) {
   yield* xs;
 }
-for (var x of delegate_yield_iterable([])) {
+for (var x of delegate_yield_iterable([ ])) {
   (x: string); // error: number ~> string
 }
 

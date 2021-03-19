@@ -261,7 +261,7 @@ foo |> bar ?? baz;
 (foo |> bar) ?? baz;
 
 const result =
-  [1, 2, 3]
+  [ 1, 2, 3 ]
   |> map((a) => a * 2)
   |> filter((a) => a > 5)
   |> reduce((sum, a) => a + sum, 0)
@@ -278,12 +278,12 @@ const searchResults$ =
   |> share();
 
 const result =
-  [5, 10]
+  [ 5, 10 ]
   |> ((_) => _.map((x) => x * 2))
   |> ((_) => _.reduce((a, b) => a + b))
   |> ((sum) => sum + 1);
 
-const result2 = [4, 9].map((x) => x |> inc |> double);
+const result2 = [ 4, 9 ].map((x) => x |> inc |> double);
 
 ================================================================================
 `;
@@ -373,7 +373,7 @@ function createPerson(attrs) {
 }
 
 const result =
-  [1, 2, 3]
+  [ 1, 2, 3 ]
   |> #.map((a) => a * 2)
   |> #.filter((a) => a > 5)
   |> #.reduce((sum, a) => a + sum, 0)

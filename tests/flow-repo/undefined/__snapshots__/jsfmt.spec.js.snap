@@ -117,7 +117,7 @@ let tests = [
     var name = id ? "John" : undefined;
     (name: boolean); // error, string or void
 
-    const bar = [undefined, "bar"];
+    const bar = [ undefined, "bar" ];
     (bar[x]: boolean); // error, string or void
   },
 
@@ -130,7 +130,7 @@ let tests = [
       x[0]; // should error, could be void
     }
 
-    const bar = [undefined, "bar"];
+    const bar = [ undefined, "bar" ];
     (bar[x]: boolean); // error, string only
   },
 ];

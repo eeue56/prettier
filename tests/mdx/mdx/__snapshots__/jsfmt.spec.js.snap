@@ -65,7 +65,7 @@ import {
 ---
 
 export const meta = {
-  authors: [fred, sue],
+  authors: [ fred, sue ],
   layout: Layout,
 }
 
@@ -151,7 +151,7 @@ import {
 ---
 
 export const meta = {
-  authors: [fred, sue],
+  authors: [ fred, sue ],
   layout: Layout,
 };
 
@@ -630,7 +630,7 @@ import { Buz } from "./Fixture"
 
 export const foo = {
   hi: \`Fudge \${Baz.displayName || "Baz"}\`,
-  authors: ["fred", "sally"],
+  authors: [ "fred", "sally" ],
 }
 
 # Hello, world!
@@ -720,7 +720,7 @@ import { Buz } from "./Fixture";
 
 export const foo = {
   hi: \`Fudge \${Baz.displayName || "Baz"}\`,
-  authors: ["fred", "sally"],
+  authors: [ "fred", "sally" ],
 };
 
 # Hello, world!

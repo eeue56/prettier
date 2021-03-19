@@ -1236,7 +1236,7 @@ expect(() => {}).toTriggerReadyStateChanges([
   // Nothing.
 ])
 
-;[1 /* first comment */, 2 /* second comment */, 3]
+;[ 1 /* first comment */, 2 /* second comment */, 3 ]
 
 ================================================================================
 `;
@@ -1258,7 +1258,7 @@ expect(() => {}).toTriggerReadyStateChanges([
   // Nothing.
 ]);
 
-[1 /* first comment */, 2 /* second comment */, 3];
+[ 1 /* first comment */, 2 /* second comment */, 3 ];
 
 ================================================================================
 `;
@@ -2569,7 +2569,7 @@ else {
 }
 
 // The comment makes the line break in a weird way
-const result = asyncExecute("non_existing_command", /* args */ [])
+const result = asyncExecute("non_existing_command", /* args */ [ ])
 
 // The closing paren is printed on the same line as the comment
 foo(
@@ -2720,7 +2720,7 @@ else {
 }
 
 // The comment makes the line break in a weird way
-const result = asyncExecute("non_existing_command", /* args */ []);
+const result = asyncExecute("non_existing_command", /* args */ [ ]);
 
 // The closing paren is printed on the same line as the comment
 foo(
@@ -5561,11 +5561,11 @@ let obj4 = {
 
 let obj5 =
   // Comment
-  ["val"]
+  [ "val" ]
 
 let obj6 =
   // Comment
-  ["val"]
+  [ "val" ]
 
 let obj7 = [
   // Comment
@@ -5608,7 +5608,7 @@ let // Comment
 
 const foo3 = 123
 // Nothing to see here.
-;["2", "3"].forEach((x) => console.log(x))
+;[ "2", "3" ].forEach((x) => console.log(x))
 
 ================================================================================
 `;
@@ -5711,11 +5711,11 @@ let obj4 = {
 
 let obj5 =
   // Comment
-  ["val"];
+  [ "val" ];
 
 let obj6 =
   // Comment
-  ["val"];
+  [ "val" ];
 
 let obj7 = [
   // Comment
@@ -5758,7 +5758,7 @@ let // Comment
 
 const foo3 = 123;
 // Nothing to see here.
-["2", "3"].forEach((x) => console.log(x));
+[ "2", "3" ].forEach((x) => console.log(x));
 
 ================================================================================
 `;

@@ -88,7 +88,7 @@ g
   // Intentionally not passing \`basicFlags\` to \`XRegExp.union\` since any syntax
   // transformation resulting from those flags was already applied to \`left\` and
   // \`right\` when they were passed through the XRegExp constructor above.
-  XRegExp.union([left, right], "", { conjunction: "or" }).source
+  XRegExp.union([ left, right ], "", { conjunction: "or" }).source
 })[^\${escapeChar}])+)+
 \`;
 

@@ -714,7 +714,7 @@ printWidth: 80
   [target]=""
   [target]="a(1)(2)"
   [target]="a[b]"
-  [target]="[1]"
+  [target]="[ 1 ]"
   [target]="{ a: 1 }"
   [target]="{ a: 1 }"
   [target]="{
@@ -759,7 +759,7 @@ printWidth: 80
   *ngIf="a | pipe"
   *ngFor="let hero of heroes"
   *ngFor="
-    let hero of [1, 2, 3, 666666666666666666666666666666666666];
+    let hero of [ 1, 2, 3, 666666666666666666666666666666666666 ];
     let i = index
   "
   *ngFor="let hero of heroes; trackBy: trackByHeroes"
@@ -1585,7 +1585,7 @@ trailingComma: "none"
   [target]=""
   [target]="a(1)(2)"
   [target]="a[b]"
-  [target]="[1]"
+  [target]="[ 1 ]"
   [target]="{ a: 1 }"
   [target]="{ a: 1 }"
   [target]="{
@@ -1630,7 +1630,7 @@ trailingComma: "none"
   *ngIf="a | pipe"
   *ngFor="let hero of heroes"
   *ngFor="
-    let hero of [1, 2, 3, 666666666666666666666666666666666666];
+    let hero of [ 1, 2, 3, 666666666666666666666666666666666666 ];
     let i = index
   "
   *ngFor="let hero of heroes; trackBy: trackByHeroes"
@@ -1855,7 +1855,7 @@ printWidth: 80
   [target]=""
   [target]="a(1)(2)"
   [target]="a[b]"
-  [target]="[1]"
+  [target]="[ 1 ]"
   [target]="{ a: 1 }"
   [target]="{ a: 1 }"
   [target]="{
@@ -1900,7 +1900,7 @@ printWidth: 80
   *ngIf="a | pipe"
   *ngFor="let hero of heroes"
   *ngFor="
-    let hero of [1, 2, 3, 666666666666666666666666666666666666];
+    let hero of [ 1, 2, 3, 666666666666666666666666666666666666 ];
     let i = index
   "
   *ngFor="let hero of heroes; trackBy: trackByHeroes"
@@ -3105,7 +3105,7 @@ printWidth: 80
 <div>{{ a ? 1 : 2 }}</div>
 <div>{{ a(1)(2) }}</div>
 <div>{{ a[b] }}</div>
-<div>{{ [1] }}</div>
+<div>{{ [ 1 ] }}</div>
 <div>{{ { a: 1 } }}</div>
 <div>{{ { a: 1 } }}</div>
 <div>{{ true }}</div>
@@ -3658,7 +3658,7 @@ trailingComma: "none"
 <div>{{ a ? 1 : 2 }}</div>
 <div>{{ a(1)(2) }}</div>
 <div>{{ a[b] }}</div>
-<div>{{ [1] }}</div>
+<div>{{ [ 1 ] }}</div>
 <div>{{ { a: 1 } }}</div>
 <div>{{ { a: 1 } }}</div>
 <div>{{ true }}</div>
@@ -3824,7 +3824,7 @@ printWidth: 80
 <div>{{ a ? 1 : 2 }}</div>
 <div>{{ a(1)(2) }}</div>
 <div>{{ a[b] }}</div>
-<div>{{ [1] }}</div>
+<div>{{ [ 1 ] }}</div>
 <div>{{ { a: 1 } }}</div>
 <div>{{ { a: 1 } }}</div>
 <div>{{ true }}</div>

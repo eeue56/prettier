@@ -173,9 +173,9 @@ class C<X> extends B<X> { }
 ((new C: C<number>): D<string>) // error: number ~/~ string
 
 =====================================output=====================================
-var a = []; // Array<X> ~> a
+var a = [ ]; // Array<X> ~> a
 function bar() {
-  a = a.concat([]); // terminate despite expanding types:
+  a = a.concat([ ]); // terminate despite expanding types:
   // a ~> .concat(Array<Y>)
   // Array<X> ~> .concat(Array<Y>)
   // Array<X|Y> ~> a
@@ -290,7 +290,7 @@ type NestedArray<T> = Array<T | NestedArray<T>>;
 function flatten<T>(arrArg: NestedArray<T>) {
   let arr = arrArg;
   while (true) {
-    arr = Array.prototype.concat.apply([], arr);
+    arr = Array.prototype.concat.apply([ ], arr);
   }
 }
 

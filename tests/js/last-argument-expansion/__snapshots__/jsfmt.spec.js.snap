@@ -82,7 +82,7 @@ true
 ({
   processors: [
     require("autoprefixer", {
-      browsers: ["> 1%", "last 2 versions", "ie >= 11", "Firefox ESR"],
+      browsers: [ "> 1%", "last 2 versions", "ie >= 11", "Firefox ESR" ],
     }),
     require("postcss-url")({
       url: (url) =>
@@ -211,9 +211,9 @@ exports.examples = [
 
 someReallyReallyReallyReallyReallyReallyReallyReallyReallyReallyReallyReallyReallyReally.a(
   [
-    [],
+    [ ],
     // comment
-    [],
+    [ ],
   ]
 );
 
@@ -417,11 +417,11 @@ instantiate(game, [
 
 =====================================output=====================================
 instantiate(game, [
-  transform([-0.7, 0.5, 0]),
+  transform([ -0.7, 0.5, 0 ]),
   render_colored_diffuse(
     game.MaterialDiffuse,
     game.Meshes["monkey_flat"],
-    [1, 1, 0.3, 1]
+    [ 1, 1, 0.3, 1 ]
   ),
 ]);
 
@@ -457,7 +457,7 @@ export const log = y => {
 =====================================output=====================================
 const formatData = pipe(
   zip,
-  map(([ref, data]) => ({
+  map(([ ref, data ]) => ({
     nodeId: ref.nodeId.toString(),
     ...attributeFromDataValue(ref.attributeId, data),
   })),
@@ -543,7 +543,22 @@ SuperSuperSuperSuperSuperSuperSuperSuperSuperSuperSuperSuperLongCall(
   }
 );
 
-func(one, two, three, four, five, six, seven, eig, is, this, too, long, no, []);
+func(
+  one,
+  two,
+  three,
+  four,
+  five,
+  six,
+  seven,
+  eig,
+  is,
+  this,
+  too,
+  long,
+  no,
+  [ ]
+);
 func(
   one,
   two,
@@ -558,7 +573,7 @@ func(
   too,
   long,
   yes,
-  []
+  [ ]
 );
 func(one, two, three, four, five, six, seven, eig, is, this, too, long, yes, [
   // Comments
@@ -611,8 +626,8 @@ const contentTypes = function (tile, singleSelection) {
   return compute(function contentTypesContentTypes(
     tile,
     searchString = "",
-    filteredContentTypes = [],
-    contentTypesArray = [],
+    filteredContentTypes = [ ],
+    contentTypesArray = [ ],
     selectedGroup,
     singleSelection
   ) {

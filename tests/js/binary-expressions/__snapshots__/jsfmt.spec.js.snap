@@ -560,7 +560,7 @@ const obj = {
 
 =====================================output=====================================
 prevState = prevState || {
-  catalogs: [],
+  catalogs: [ ],
   loadState: LOADED,
   opened: false,
   searchQuery: "",
@@ -569,7 +569,7 @@ prevState = prevState || {
 
 prevState = prevState ||
   defaultState || {
-    catalogs: [],
+    catalogs: [ ],
     loadState: LOADED,
     opened: false,
     searchQuery: "",
@@ -579,7 +579,7 @@ prevState = prevState ||
 prevState =
   prevState ||
   (defaultState && {
-    catalogs: [],
+    catalogs: [ ],
     loadState: LOADED,
     opened: false,
     searchQuery: "",
@@ -588,7 +588,7 @@ prevState =
 
 prevState = prevState ||
   (useDefault && defaultState) || {
-    catalogs: [],
+    catalogs: [ ],
     loadState: LOADED,
     opened: false,
     searchQuery: "",
@@ -978,12 +978,12 @@ const x6 =
 const x7 =
   firstItemWithAVeryLongNameThatKeepsGoing ||
   firstItemWithAVeryLongNameThatKeepsGoing ||
-  [];
+  [ ];
 const x8 =
   call(
     firstItemWithAVeryLongNameThatKeepsGoing,
     firstItemWithAVeryLongNameThatKeepsGoing
-  ) || [];
+  ) || [ ];
 
 const x9 =
   longVariable * longint && longVariable >> 0 && longVariable + longVariable;

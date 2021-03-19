@@ -55,25 +55,25 @@ this.subscriptions.add(
 compose(
   sortBy((x) => x),
   flatten,
-  map((x) => [x, x * 2])
+  map((x) => [ x, x * 2 ])
 );
 
 somelib.compose(
   sortBy((x) => x),
   flatten,
-  map((x) => [x, x * 2])
+  map((x) => [ x, x * 2 ])
 );
 
 composeFlipped(
   sortBy((x) => x),
   flatten,
-  map((x) => [x, x * 2])
+  map((x) => [ x, x * 2 ])
 );
 
 somelib.composeFlipped(
   sortBy((x) => x),
   flatten,
-  map((x) => [x, x * 2])
+  map((x) => [ x, x * 2 ])
 );
 
 // no regression (#4602)
@@ -322,7 +322,7 @@ printWidth: 80
       process.exit(1);
     });
 
-  pipe(Changelog.timestampOfFirstCommit([[commit]]), O.toUndefined);
+  pipe(Changelog.timestampOfFirstCommit([ [ commit ] ]), O.toUndefined);
 
   chain(flow(getUploadUrl, E.mapLeft(Errors.unknownError), TE.fromEither));
 })();
@@ -423,7 +423,7 @@ printWidth: 80
 
   pipe(
     // add a descriptive comment here
-    Changelog.timestampOfFirstCommit([[commit]]),
+    Changelog.timestampOfFirstCommit([ [ commit ] ]),
     O.toUndefined
   );
 
@@ -515,7 +515,7 @@ var db = {
   users: {
     JOE: {
       name: "Joe",
-      followers: ["STEVE", "SUZY"],
+      followers: [ "STEVE", "SUZY" ],
     },
   },
 };
@@ -678,7 +678,7 @@ const foo = createSelector(getIds, getObjects, (ids, objects) =>
   ids.map((id) => objects[id])
 );
 
-const bar = createSelector([getIds, getObjects], (ids, objects) =>
+const bar = createSelector([ getIds, getObjects ], (ids, objects) =>
   ids.map((id) => objects[id])
 );
 

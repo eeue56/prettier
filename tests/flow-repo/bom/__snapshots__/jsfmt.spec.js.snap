@@ -104,9 +104,9 @@ a.set("foo", "bar"); // correct
 a.set("foo", {}); // incorrect
 a.set(2, "bar"); // incorrect
 a.set("foo", "bar", "baz"); // incorrect
-a.set("bar", new File([], "q")); // correct
-a.set("bar", new File([], "q"), "x"); // correct
-a.set("bar", new File([], "q"), 2); // incorrect
+a.set("bar", new File([ ], "q")); // correct
+a.set("bar", new File([ ], "q"), "x"); // correct
+a.set("bar", new File([ ], "q"), 2); // incorrect
 a.set("bar", new Blob()); // correct
 a.set("bar", new Blob(), "x"); // correct
 a.set("bar", new Blob(), 2); // incorrect
@@ -117,9 +117,9 @@ a.append("foo", {}); // incorrect
 a.append(2, "bar"); // incorrect
 a.append("foo", "bar", "baz"); // incorrect
 a.append("foo", "bar"); // correct
-a.append("bar", new File([], "q")); // correct
-a.append("bar", new File([], "q"), "x"); // correct
-a.append("bar", new File([], "q"), 2); // incorrect
+a.append("bar", new File([ ], "q")); // correct
+a.append("bar", new File([ ], "q"), "x"); // correct
+a.append("bar", new File([ ], "q"), 2); // incorrect
 a.append("bar", new Blob()); // correct
 a.append("bar", new Blob(), "x"); // correct
 a.append("bar", new Blob(), 2); // incorrect
@@ -141,15 +141,15 @@ for (let x: string | File | Blob of a.values()) {
 } // incorrect
 
 // entries
-for (let [x, y]: [string, string | File] of a.entries()) {
+for (let [ x, y ]: [string, string | File] of a.entries()) {
 } // correct
-for (let [x, y]: [string, string | File | Blob] of a.entries()) {
+for (let [ x, y ]: [string, string | File | Blob] of a.entries()) {
 } // incorrect
-for (let [x, y]: [number, string] of a.entries()) {
+for (let [ x, y ]: [number, string] of a.entries()) {
 } // incorrect
-for (let [x, y]: [string, number] of a.entries()) {
+for (let [ x, y ]: [string, number] of a.entries()) {
 } // incorrect
-for (let [x, y]: [number, number] of a.entries()) {
+for (let [ x, y ]: [number, number] of a.entries()) {
 } // incorrect
 
 ================================================================================
@@ -210,7 +210,7 @@ new MutationObserver((n: number) => {}); // incorrect
 
 // observe
 const div = document.createElement("div");
-o.observe(div, { attributes: true, attributeFilter: ["style"] }); // correct
+o.observe(div, { attributes: true, attributeFilter: [ "style" ] }); // correct
 o.observe(div, { characterData: true, invalid: true }); // correct
 o.observe(); // incorrect
 o.observe("invalid"); // incorrect

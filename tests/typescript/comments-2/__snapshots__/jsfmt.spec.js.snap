@@ -194,7 +194,7 @@ var x = {
 class X2 {
   getSectionMode(
     pageMetaData: PageMetaData,
-    sectionMetaData: SectionMetaData = ["unknown"]
+    sectionMetaData: SectionMetaData = [ "unknown" ]
     /* $FlowFixMe This error was exposed while converting keyMirror
      * to keyMirrorRecursive */
   ): $Enum<SectionMode> {}
@@ -310,7 +310,7 @@ var x = {
 class X2 {
   getSectionMode(
     pageMetaData: PageMetaData,
-    sectionMetaData: SectionMetaData = ["unknown"]
+    sectionMetaData: SectionMetaData = [ "unknown" ]
     /* $FlowFixMe This error was exposed while converting keyMirror
      * to keyMirrorRecursive */
   ): $Enum<SectionMode> {}

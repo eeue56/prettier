@@ -722,7 +722,7 @@ export class NumberGenerator {
 export var varDeclNumber1 = 1,
   varDeclNumber2 = 2;
 export var { destructuredObjNumber } = { destructuredObjNumber: 1 };
-export var [destructuredArrNumber] = [1];
+export var [ destructuredArrNumber ] = [ 1 ];
 
 ================================================================================
 `;
@@ -781,7 +781,7 @@ export class NumberGenerator2 {
 export var varDeclNumber3 = 1,
   varDeclNumber4 = 2;
 export var { destructuredObjNumber2 } = { destructuredObjNumber2: 1 };
-export var [destructuredArrNumber2] = [1];
+export var [ destructuredArrNumber2 ] = [ 1 ];
 
 ================================================================================
 `;

@@ -508,7 +508,7 @@ var x: number = C.displayName;
 var React = require("react");
 var Mixin = require("Mixin");
 var C = React.createClass({
-  mixins: [Mixin],
+  mixins: [ Mixin ],
   propTypes: {
     x: React.PropTypes.string.isRequired,
     y: React.PropTypes.array,
@@ -585,7 +585,7 @@ var C = React.createClass({
   },
 });
 
-<C statistics={[{}, { label: "", value: undefined }]} />; // error (label is required, value not required)
+<C statistics={[ {}, { label: "", value: undefined } ]} />; // error (label is required, value not required)
 
 var props: Array<{ label: string, value?: number }> = [
   {},
@@ -796,8 +796,8 @@ var TestProps = React.createClass({
     instanceOf_rec: React.PropTypes.instanceOf(Object).isRequired,
     objectOf: React.PropTypes.objectOf(React.PropTypes.string),
     objectOf_rec: React.PropTypes.objectOf(React.PropTypes.string).isRequired,
-    oneOf: React.PropTypes.oneOf(["yes", "no"]),
-    oneOf_rec: React.PropTypes.oneOf(["yes", "no"]).isRequired,
+    oneOf: React.PropTypes.oneOf([ "yes", "no" ]),
+    oneOf_rec: React.PropTypes.oneOf([ "yes", "no" ]).isRequired,
     oneOfType: React.PropTypes.oneOfType([
       React.PropTypes.string,
       React.PropTypes.number,

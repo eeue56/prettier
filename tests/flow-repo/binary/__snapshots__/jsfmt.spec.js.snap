@@ -75,9 +75,9 @@ let tests = [
 
   // arrays on RHS
   function () {
-    "foo" in [];
-    0 in [];
-    "length" in [];
+    "foo" in [ ];
+    0 in [ ];
+    "length" in [ ];
   },
 
   // primitive classes on RHS
@@ -99,8 +99,8 @@ let tests = [
     null in {}; // error
     void 0 in {}; // error
     ({} in {}); // error
-    [] in {}; // error
-    false in []; // error
+    [ ] in {}; // error
+    false in [ ]; // error
   },
 
   // in predicates

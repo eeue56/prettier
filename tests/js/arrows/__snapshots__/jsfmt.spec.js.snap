@@ -955,7 +955,7 @@ jest.mock(
   () =>
     class {
       findMatchingTests(pattern) {
-        return { paths: [] };
+        return { paths: [ ] };
       }
     }
 );
@@ -1752,7 +1752,7 @@ jest.mock(
   () =>
     class {
       findMatchingTests(pattern) {
-        return { paths: [] };
+        return { paths: [ ] };
       }
     }
 );

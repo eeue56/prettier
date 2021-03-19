@@ -214,12 +214,12 @@ expect(
     .style.paddingRight
 ).toBe("1000px");
 
-const { course, conflicts = [], index, scheduleId, studentId, something } =
+const { course, conflicts = [ ], index, scheduleId, studentId, something } =
   a.this.props;
 
 const {
   course2,
-  conflicts2 = [],
+  conflicts2 = [ ],
   index2,
   scheduleId2,
   studentId2,
@@ -453,13 +453,13 @@ window.Data[key]("foo")
   .catch(() => b);
 
 =====================================output=====================================
-[].forEach((key) => {
+[ ].forEach((key) => {
   data[key]("foo")
     .then(() => console.log("bar"))
     .catch(() => console.log("baz"));
 });
 
-[].forEach((key) => {
+[ ].forEach((key) => {
   data("foo")
     [key]("bar")
     .then(() => console.log("bar"))
@@ -590,7 +590,7 @@ d3.select("body")
   .at({ width: 30, fill: "#f0f" })
   .st({ fontWeight: 600 });
 
-const myScale = d3.scaleLinear().domain([1950, 1980]).range([0, width]);
+const myScale = d3.scaleLinear().domain([ 1950, 1980 ]).range([ 0, width ]);
 
 not.d3
   .select("body")
@@ -598,7 +598,7 @@ not.d3
   .at({ width: 30, fill: "#f0f" })
   .st({ fontWeight: 600 });
 
-not.d3.scaleLinear().domain([1950, 1980]).range([0, width]);
+not.d3.scaleLinear().domain([ 1950, 1980 ]).range([ 0, width ]);
 
 ================================================================================
 `;
@@ -675,7 +675,7 @@ function f() {
       fileMetadata[H.ID] = metadataId;
       setModule(metadataId, metadataModule);
     }
-    fileMetadata[H.DEPENDENCIES] = metadata.dependencies || [];
+    fileMetadata[H.DEPENDENCIES] = metadata.dependencies || [ ];
   });
 }
 
@@ -1031,7 +1031,7 @@ function palindrome(a, b) {
 
 d3.select("body")
   .selectAll("p")
-  .data([1, 2, 3])
+  .data([ 1, 2, 3 ])
   .enter()
   .style("color", "white");
 
@@ -1123,7 +1123,7 @@ it("gets triggered by mouseenter", () => {
 const a1 = x.a(true).b(null).c(123);
 const a2 = x.d("").e(\`\`).f(g);
 const a3 = x.d("").e(\`\${123}\`).f(g);
-const a4 = x.h(i.j).k(l()).m([n, o]);
+const a4 = x.h(i.j).k(l()).m([ n, o ]);
 class X {
   y() {
     const j = x.a(this).b(super.cde()).f(/g/).h(new i()).j();
@@ -1132,7 +1132,7 @@ class X {
 
 // should break when call expressions get complex
 x.a()
-  .b([c, [d, [e]]])
+  .b([ c, [ d, [ e ] ] ])
   .f();
 x.a()
   .b(c(d(e())))
@@ -1180,7 +1180,7 @@ const someLongVariableName = (idx(
 
 =====================================output=====================================
 const someLongVariableName = (
-  idx(this.props, (props) => props.someLongPropertyName) || []
+  idx(this.props, (props) => props.someLongPropertyName) || [ ]
 ).map((edge) => edge.node);
 
 (veryLongVeryLongVeryLong || e).map((tickets) =>
@@ -1409,7 +1409,7 @@ const fieldsToSend = _(["id", extra]).without("transition").uniq();
 console.log(values.filter(isValid).map(extractId).slice(-5, -1));
 
 =====================================output=====================================
-const fieldsToSend = _(["id", extra]).without("transition").uniq();
+const fieldsToSend = _([ "id", extra ]).without("transition").uniq();
 
 console.log(values.filter(isValid).map(extractId).slice(-5, -1));
 

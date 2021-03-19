@@ -142,7 +142,7 @@ declare var s: symbol;
 {
   const s: symbol = Symbol();
   // Cannot compare against non-symbols
-  const x: [] = [];
+  const x: [] = [ ];
   x == s; // Error
   s == x; // Error
   x != s; // Error

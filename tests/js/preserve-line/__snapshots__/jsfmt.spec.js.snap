@@ -263,7 +263,7 @@ differentArgTypes(
 );
 
 moreArgTypes(
-  [1, 2, 3],
+  [ 1, 2, 3 ],
 
   {
     name: "Hello World",
@@ -300,7 +300,7 @@ foo.apply(
   null,
 
   // Array here
-  [1, 2]
+  [ 1, 2 ]
 );
 
 bar.on(
@@ -312,7 +312,7 @@ bar.on(
 );
 
 foo(
-  ["A, B"],
+  [ "A, B" ],
 
   /* function here */
   function doSomething() {
@@ -325,7 +325,7 @@ doSomething.apply(
 
   // Comment
 
-  ["Hello world 1", "Hello world 2", "Hello world 3"]
+  [ "Hello world 1", "Hello world 2", "Hello world 3" ]
 );
 
 doAnotherThing(

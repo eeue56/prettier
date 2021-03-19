@@ -20,12 +20,12 @@ function foo() {
 =====================================output=====================================
 // prettier-ignore
 'use strict';
-;[].forEach()
+;[ ].forEach()
 
 function foo() {
   // prettier-ignore
   'use strict';
-  ;[].forEach()
+  ;[ ].forEach()
 }
 
 ================================================================================
@@ -50,12 +50,12 @@ function foo() {
 =====================================output=====================================
 // prettier-ignore
 'use strict';
-[].forEach();
+[ ].forEach();
 
 function foo() {
   // prettier-ignore
   'use strict';
-  [].forEach();
+  [ ].forEach();
 }
 
 ================================================================================

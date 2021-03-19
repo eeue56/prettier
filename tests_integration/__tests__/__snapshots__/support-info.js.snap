@@ -280,7 +280,7 @@ exports[`CLI --support-info (stdout) 1`] = `
   \\"languages\\": [
     {
       \\"aceMode\\": \\"javascript\\",
-      \\"aliases\\": [\\"js\\", \\"node\\"],
+      \\"aliases\\": [ \\"js\\", \\"node\\" ],
       \\"codemirrorMimeType\\": \\"text/javascript\\",
       \\"codemirrorMode\\": \\"javascript\\",
       \\"color\\": \\"#f1e05a\\",
@@ -308,7 +308,7 @@ exports[`CLI --support-info (stdout) 1`] = `
         \\".xsjslib\\",
         \\".wxs\\"
       ],
-      \\"filenames\\": [\\"Jakefile\\"],
+      \\"filenames\\": [ \\"Jakefile\\" ],
       \\"interpreters\\": [
         \\"chakra\\",
         \\"d8\\",
@@ -335,16 +335,16 @@ exports[`CLI --support-info (stdout) 1`] = `
       \\"since\\": \\"0.0.0\\",
       \\"tmScope\\": \\"source.js\\",
       \\"type\\": \\"programming\\",
-      \\"vscodeLanguageIds\\": [\\"javascript\\", \\"mongo\\"]
+      \\"vscodeLanguageIds\\": [ \\"javascript\\", \\"mongo\\" ]
     },
     {
       \\"aceMode\\": \\"javascript\\",
-      \\"aliases\\": [],
+      \\"aliases\\": [ ],
       \\"codemirrorMimeType\\": \\"text/javascript\\",
       \\"codemirrorMode\\": \\"javascript\\",
       \\"color\\": \\"#f1e05a\\",
-      \\"extensions\\": [\\".js.flow\\"],
-      \\"filenames\\": [],
+      \\"extensions\\": [ \\".js.flow\\" ],
+      \\"filenames\\": [ ],
       \\"interpreters\\": [
         \\"chakra\\",
         \\"d8\\",
@@ -359,17 +359,17 @@ exports[`CLI --support-info (stdout) 1`] = `
       ],
       \\"linguistLanguageId\\": 183,
       \\"name\\": \\"Flow\\",
-      \\"parsers\\": [\\"flow\\", \\"babel-flow\\"],
+      \\"parsers\\": [ \\"flow\\", \\"babel-flow\\" ],
       \\"since\\": \\"0.0.0\\",
       \\"tmScope\\": \\"source.js\\",
       \\"type\\": \\"programming\\",
-      \\"vscodeLanguageIds\\": [\\"javascript\\"]
+      \\"vscodeLanguageIds\\": [ \\"javascript\\" ]
     },
     {
       \\"aceMode\\": \\"javascript\\",
       \\"codemirrorMimeType\\": \\"text/jsx\\",
       \\"codemirrorMode\\": \\"jsx\\",
-      \\"extensions\\": [\\".jsx\\"],
+      \\"extensions\\": [ \\".jsx\\" ],
       \\"group\\": \\"JavaScript\\",
       \\"linguistLanguageId\\": 183,
       \\"name\\": \\"JSX\\",
@@ -385,52 +385,52 @@ exports[`CLI --support-info (stdout) 1`] = `
       \\"since\\": \\"0.0.0\\",
       \\"tmScope\\": \\"source.js.jsx\\",
       \\"type\\": \\"programming\\",
-      \\"vscodeLanguageIds\\": [\\"javascriptreact\\"]
+      \\"vscodeLanguageIds\\": [ \\"javascriptreact\\" ]
     },
     {
       \\"aceMode\\": \\"typescript\\",
-      \\"aliases\\": [\\"ts\\"],
+      \\"aliases\\": [ \\"ts\\" ],
       \\"codemirrorMimeType\\": \\"application/typescript\\",
       \\"codemirrorMode\\": \\"javascript\\",
       \\"color\\": \\"#2b7489\\",
-      \\"extensions\\": [\\".ts\\"],
-      \\"interpreters\\": [\\"deno\\", \\"ts-node\\"],
+      \\"extensions\\": [ \\".ts\\" ],
+      \\"interpreters\\": [ \\"deno\\", \\"ts-node\\" ],
       \\"linguistLanguageId\\": 378,
       \\"name\\": \\"TypeScript\\",
-      \\"parsers\\": [\\"typescript\\", \\"babel-ts\\"],
+      \\"parsers\\": [ \\"typescript\\", \\"babel-ts\\" ],
       \\"since\\": \\"1.4.0\\",
       \\"tmScope\\": \\"source.ts\\",
       \\"type\\": \\"programming\\",
-      \\"vscodeLanguageIds\\": [\\"typescript\\"]
+      \\"vscodeLanguageIds\\": [ \\"typescript\\" ]
     },
     {
       \\"aceMode\\": \\"javascript\\",
       \\"codemirrorMimeType\\": \\"text/jsx\\",
       \\"codemirrorMode\\": \\"jsx\\",
-      \\"extensions\\": [\\".tsx\\"],
+      \\"extensions\\": [ \\".tsx\\" ],
       \\"group\\": \\"TypeScript\\",
       \\"linguistLanguageId\\": 94901924,
       \\"name\\": \\"TSX\\",
-      \\"parsers\\": [\\"typescript\\", \\"babel-ts\\"],
+      \\"parsers\\": [ \\"typescript\\", \\"babel-ts\\" ],
       \\"since\\": \\"1.4.0\\",
       \\"tmScope\\": \\"source.tsx\\",
       \\"type\\": \\"programming\\",
-      \\"vscodeLanguageIds\\": [\\"typescriptreact\\"]
+      \\"vscodeLanguageIds\\": [ \\"typescriptreact\\" ]
     },
     {
       \\"aceMode\\": \\"json\\",
       \\"codemirrorMimeType\\": \\"application/json\\",
       \\"codemirrorMode\\": \\"javascript\\",
-      \\"extensions\\": [],
-      \\"filenames\\": [\\"package.json\\", \\"package-lock.json\\", \\"composer.json\\"],
+      \\"extensions\\": [ ],
+      \\"filenames\\": [ \\"package.json\\", \\"package-lock.json\\", \\"composer.json\\" ],
       \\"linguistLanguageId\\": 174,
       \\"name\\": \\"JSON.stringify\\",
-      \\"parsers\\": [\\"json-stringify\\"],
+      \\"parsers\\": [ \\"json-stringify\\" ],
       \\"searchable\\": false,
       \\"since\\": \\"1.13.0\\",
       \\"tmScope\\": \\"source.json\\",
       \\"type\\": \\"data\\",
-      \\"vscodeLanguageIds\\": [\\"json\\"]
+      \\"vscodeLanguageIds\\": [ \\"json\\" ]
     },
     {
       \\"aceMode\\": \\"json\\",
@@ -465,16 +465,16 @@ exports[`CLI --support-info (stdout) 1`] = `
       ],
       \\"linguistLanguageId\\": 174,
       \\"name\\": \\"JSON\\",
-      \\"parsers\\": [\\"json\\"],
+      \\"parsers\\": [ \\"json\\" ],
       \\"searchable\\": false,
       \\"since\\": \\"1.5.0\\",
       \\"tmScope\\": \\"source.json\\",
       \\"type\\": \\"data\\",
-      \\"vscodeLanguageIds\\": [\\"json\\"]
+      \\"vscodeLanguageIds\\": [ \\"json\\" ]
     },
     {
       \\"aceMode\\": \\"javascript\\",
-      \\"aliases\\": [\\"jsonc\\"],
+      \\"aliases\\": [ \\"jsonc\\" ],
       \\"codemirrorMimeType\\": \\"text/javascript\\",
       \\"codemirrorMode\\": \\"javascript\\",
       \\"extensions\\": [
@@ -509,107 +509,107 @@ exports[`CLI --support-info (stdout) 1`] = `
       \\"group\\": \\"JSON\\",
       \\"linguistLanguageId\\": 423,
       \\"name\\": \\"JSON with Comments\\",
-      \\"parsers\\": [\\"json\\"],
+      \\"parsers\\": [ \\"json\\" ],
       \\"since\\": \\"1.5.0\\",
       \\"tmScope\\": \\"source.js\\",
       \\"type\\": \\"data\\",
-      \\"vscodeLanguageIds\\": [\\"jsonc\\"]
+      \\"vscodeLanguageIds\\": [ \\"jsonc\\" ]
     },
     {
       \\"aceMode\\": \\"javascript\\",
       \\"codemirrorMimeType\\": \\"application/json\\",
       \\"codemirrorMode\\": \\"javascript\\",
-      \\"extensions\\": [\\".json5\\"],
+      \\"extensions\\": [ \\".json5\\" ],
       \\"linguistLanguageId\\": 175,
       \\"name\\": \\"JSON5\\",
-      \\"parsers\\": [\\"json5\\"],
+      \\"parsers\\": [ \\"json5\\" ],
       \\"since\\": \\"1.13.0\\",
       \\"tmScope\\": \\"source.js\\",
       \\"type\\": \\"data\\",
-      \\"vscodeLanguageIds\\": [\\"json5\\"]
+      \\"vscodeLanguageIds\\": [ \\"json5\\" ]
     },
     {
       \\"aceMode\\": \\"css\\",
       \\"codemirrorMimeType\\": \\"text/css\\",
       \\"codemirrorMode\\": \\"css\\",
       \\"color\\": \\"#563d7c\\",
-      \\"extensions\\": [\\".css\\", \\".wxss\\"],
+      \\"extensions\\": [ \\".css\\", \\".wxss\\" ],
       \\"linguistLanguageId\\": 50,
       \\"name\\": \\"CSS\\",
-      \\"parsers\\": [\\"css\\"],
+      \\"parsers\\": [ \\"css\\" ],
       \\"since\\": \\"1.4.0\\",
       \\"tmScope\\": \\"source.css\\",
       \\"type\\": \\"markup\\",
-      \\"vscodeLanguageIds\\": [\\"css\\"]
+      \\"vscodeLanguageIds\\": [ \\"css\\" ]
     },
     {
       \\"aceMode\\": \\"text\\",
-      \\"extensions\\": [\\".pcss\\", \\".postcss\\"],
+      \\"extensions\\": [ \\".pcss\\", \\".postcss\\" ],
       \\"group\\": \\"CSS\\",
       \\"linguistLanguageId\\": 262764437,
       \\"name\\": \\"PostCSS\\",
-      \\"parsers\\": [\\"css\\"],
+      \\"parsers\\": [ \\"css\\" ],
       \\"since\\": \\"1.4.0\\",
       \\"tmScope\\": \\"source.postcss\\",
       \\"type\\": \\"markup\\",
-      \\"vscodeLanguageIds\\": [\\"postcss\\"]
+      \\"vscodeLanguageIds\\": [ \\"postcss\\" ]
     },
     {
       \\"aceMode\\": \\"less\\",
       \\"codemirrorMimeType\\": \\"text/css\\",
       \\"codemirrorMode\\": \\"css\\",
       \\"color\\": \\"#1d365d\\",
-      \\"extensions\\": [\\".less\\"],
+      \\"extensions\\": [ \\".less\\" ],
       \\"linguistLanguageId\\": 198,
       \\"name\\": \\"Less\\",
-      \\"parsers\\": [\\"less\\"],
+      \\"parsers\\": [ \\"less\\" ],
       \\"since\\": \\"1.4.0\\",
       \\"tmScope\\": \\"source.css.less\\",
       \\"type\\": \\"markup\\",
-      \\"vscodeLanguageIds\\": [\\"less\\"]
+      \\"vscodeLanguageIds\\": [ \\"less\\" ]
     },
     {
       \\"aceMode\\": \\"scss\\",
       \\"codemirrorMimeType\\": \\"text/x-scss\\",
       \\"codemirrorMode\\": \\"css\\",
       \\"color\\": \\"#c6538c\\",
-      \\"extensions\\": [\\".scss\\"],
+      \\"extensions\\": [ \\".scss\\" ],
       \\"linguistLanguageId\\": 329,
       \\"name\\": \\"SCSS\\",
-      \\"parsers\\": [\\"scss\\"],
+      \\"parsers\\": [ \\"scss\\" ],
       \\"since\\": \\"1.4.0\\",
       \\"tmScope\\": \\"source.css.scss\\",
       \\"type\\": \\"markup\\",
-      \\"vscodeLanguageIds\\": [\\"scss\\"]
+      \\"vscodeLanguageIds\\": [ \\"scss\\" ]
     },
     {
       \\"aceMode\\": \\"handlebars\\",
-      \\"aliases\\": [\\"hbs\\", \\"htmlbars\\"],
+      \\"aliases\\": [ \\"hbs\\", \\"htmlbars\\" ],
       \\"color\\": \\"#f7931e\\",
-      \\"extensions\\": [\\".handlebars\\", \\".hbs\\"],
+      \\"extensions\\": [ \\".handlebars\\", \\".hbs\\" ],
       \\"linguistLanguageId\\": 155,
       \\"name\\": \\"Handlebars\\",
-      \\"parsers\\": [\\"glimmer\\"],
+      \\"parsers\\": [ \\"glimmer\\" ],
       \\"since\\": \\"2.3.0\\",
       \\"tmScope\\": \\"text.html.handlebars\\",
       \\"type\\": \\"markup\\",
-      \\"vscodeLanguageIds\\": [\\"handlebars\\"]
+      \\"vscodeLanguageIds\\": [ \\"handlebars\\" ]
     },
     {
       \\"aceMode\\": \\"text\\",
       \\"color\\": \\"#e10098\\",
-      \\"extensions\\": [\\".graphql\\", \\".gql\\", \\".graphqls\\"],
+      \\"extensions\\": [ \\".graphql\\", \\".gql\\", \\".graphqls\\" ],
       \\"linguistLanguageId\\": 139,
       \\"name\\": \\"GraphQL\\",
-      \\"parsers\\": [\\"graphql\\"],
+      \\"parsers\\": [ \\"graphql\\" ],
       \\"since\\": \\"1.5.0\\",
       \\"tmScope\\": \\"source.graphql\\",
       \\"type\\": \\"data\\",
-      \\"vscodeLanguageIds\\": [\\"graphql\\"]
+      \\"vscodeLanguageIds\\": [ \\"graphql\\" ]
     },
     {
       \\"aceMode\\": \\"markdown\\",
-      \\"aliases\\": [\\"pandoc\\"],
+      \\"aliases\\": [ \\"pandoc\\" ],
       \\"codemirrorMimeType\\": \\"text/x-gfm\\",
       \\"codemirrorMode\\": \\"gfm\\",
       \\"color\\": \\"#083fa1\\",
@@ -625,52 +625,52 @@ exports[`CLI --support-info (stdout) 1`] = `
         \\".scd\\",
         \\".workbook\\"
       ],
-      \\"filenames\\": [\\"contents.lr\\", \\"README\\"],
+      \\"filenames\\": [ \\"contents.lr\\", \\"README\\" ],
       \\"linguistLanguageId\\": 222,
       \\"name\\": \\"Markdown\\",
-      \\"parsers\\": [\\"markdown\\"],
+      \\"parsers\\": [ \\"markdown\\" ],
       \\"since\\": \\"1.8.0\\",
       \\"tmScope\\": \\"source.gfm\\",
       \\"type\\": \\"prose\\",
-      \\"vscodeLanguageIds\\": [\\"markdown\\"],
+      \\"vscodeLanguageIds\\": [ \\"markdown\\" ],
       \\"wrap\\": true
     },
     {
       \\"aceMode\\": \\"markdown\\",
-      \\"aliases\\": [\\"pandoc\\"],
+      \\"aliases\\": [ \\"pandoc\\" ],
       \\"codemirrorMimeType\\": \\"text/x-gfm\\",
       \\"codemirrorMode\\": \\"gfm\\",
       \\"color\\": \\"#083fa1\\",
-      \\"extensions\\": [\\".mdx\\"],
-      \\"filenames\\": [],
+      \\"extensions\\": [ \\".mdx\\" ],
+      \\"filenames\\": [ ],
       \\"linguistLanguageId\\": 222,
       \\"name\\": \\"MDX\\",
-      \\"parsers\\": [\\"mdx\\"],
+      \\"parsers\\": [ \\"mdx\\" ],
       \\"since\\": \\"1.15.0\\",
       \\"tmScope\\": \\"source.gfm\\",
       \\"type\\": \\"prose\\",
-      \\"vscodeLanguageIds\\": [\\"mdx\\"],
+      \\"vscodeLanguageIds\\": [ \\"mdx\\" ],
       \\"wrap\\": true
     },
     {
       \\"aceMode\\": \\"html\\",
-      \\"aliases\\": [\\"xhtml\\"],
+      \\"aliases\\": [ \\"xhtml\\" ],
       \\"codemirrorMimeType\\": \\"text/html\\",
       \\"codemirrorMode\\": \\"htmlmixed\\",
       \\"color\\": \\"#e34c26\\",
-      \\"extensions\\": [\\".component.html\\"],
-      \\"filenames\\": [],
+      \\"extensions\\": [ \\".component.html\\" ],
+      \\"filenames\\": [ ],
       \\"linguistLanguageId\\": 146,
       \\"name\\": \\"Angular\\",
-      \\"parsers\\": [\\"angular\\"],
+      \\"parsers\\": [ \\"angular\\" ],
       \\"since\\": \\"1.15.0\\",
       \\"tmScope\\": \\"text.html.basic\\",
       \\"type\\": \\"markup\\",
-      \\"vscodeLanguageIds\\": [\\"html\\"]
+      \\"vscodeLanguageIds\\": [ \\"html\\" ]
     },
     {
       \\"aceMode\\": \\"html\\",
-      \\"aliases\\": [\\"xhtml\\"],
+      \\"aliases\\": [ \\"xhtml\\" ],
       \\"codemirrorMimeType\\": \\"text/html\\",
       \\"codemirrorMode\\": \\"htmlmixed\\",
       \\"color\\": \\"#e34c26\\",
@@ -686,43 +686,43 @@ exports[`CLI --support-info (stdout) 1`] = `
       ],
       \\"linguistLanguageId\\": 146,
       \\"name\\": \\"HTML\\",
-      \\"parsers\\": [\\"html\\"],
+      \\"parsers\\": [ \\"html\\" ],
       \\"since\\": \\"1.15.0\\",
       \\"tmScope\\": \\"text.html.basic\\",
       \\"type\\": \\"markup\\",
-      \\"vscodeLanguageIds\\": [\\"html\\"]
+      \\"vscodeLanguageIds\\": [ \\"html\\" ]
     },
     {
       \\"aceMode\\": \\"html\\",
-      \\"aliases\\": [\\"xhtml\\"],
+      \\"aliases\\": [ \\"xhtml\\" ],
       \\"codemirrorMimeType\\": \\"text/html\\",
       \\"codemirrorMode\\": \\"htmlmixed\\",
       \\"color\\": \\"#e34c26\\",
-      \\"extensions\\": [],
-      \\"filenames\\": [],
+      \\"extensions\\": [ ],
+      \\"filenames\\": [ ],
       \\"linguistLanguageId\\": 146,
       \\"name\\": \\"Lightning Web Components\\",
-      \\"parsers\\": [\\"lwc\\"],
+      \\"parsers\\": [ \\"lwc\\" ],
       \\"since\\": \\"1.17.0\\",
       \\"tmScope\\": \\"text.html.basic\\",
       \\"type\\": \\"markup\\",
-      \\"vscodeLanguageIds\\": [\\"html\\"]
+      \\"vscodeLanguageIds\\": [ \\"html\\" ]
     },
     {
       \\"aceMode\\": \\"html\\",
       \\"color\\": \\"#2c3e50\\",
-      \\"extensions\\": [\\".vue\\"],
+      \\"extensions\\": [ \\".vue\\" ],
       \\"linguistLanguageId\\": 391,
       \\"name\\": \\"Vue\\",
-      \\"parsers\\": [\\"vue\\"],
+      \\"parsers\\": [ \\"vue\\" ],
       \\"since\\": \\"1.10.0\\",
       \\"tmScope\\": \\"text.html.vue\\",
       \\"type\\": \\"markup\\",
-      \\"vscodeLanguageIds\\": [\\"vue\\"]
+      \\"vscodeLanguageIds\\": [ \\"vue\\" ]
     },
     {
       \\"aceMode\\": \\"yaml\\",
-      \\"aliases\\": [\\"yml\\"],
+      \\"aliases\\": [ \\"yml\\" ],
       \\"codemirrorMimeType\\": \\"text/x-yaml\\",
       \\"codemirrorMode\\": \\"yaml\\",
       \\"color\\": \\"#cb171e\\",
@@ -747,11 +747,11 @@ exports[`CLI --support-info (stdout) 1`] = `
       ],
       \\"linguistLanguageId\\": 407,
       \\"name\\": \\"YAML\\",
-      \\"parsers\\": [\\"yaml\\"],
+      \\"parsers\\": [ \\"yaml\\" ],
       \\"since\\": \\"1.14.0\\",
       \\"tmScope\\": \\"source.yaml\\",
       \\"type\\": \\"data\\",
-      \\"vscodeLanguageIds\\": [\\"yaml\\", \\"ansible\\", \\"home-assistant\\"]
+      \\"vscodeLanguageIds\\": [ \\"yaml\\", \\"ansible\\", \\"home-assistant\\" ]
     }
   ],
   \\"options\\": [
@@ -949,7 +949,7 @@ exports[`CLI --support-info (stdout) 1`] = `
     {
       \\"array\\": true,
       \\"category\\": \\"Global\\",
-      \\"default\\": [],
+      \\"default\\": [ ],
       \\"description\\": \\"Custom directory that contains prettier plugins in node_modules subdirectory.\\\\nOverrides default behavior when plugins are searched relatively to the location of Prettier.\\\\nMultiple values are accepted.\\",
       \\"name\\": \\"pluginSearchDirs\\",
       \\"pluginDefaults\\": {},
@@ -959,7 +959,7 @@ exports[`CLI --support-info (stdout) 1`] = `
     {
       \\"array\\": true,
       \\"category\\": \\"Global\\",
-      \\"default\\": [],
+      \\"default\\": [ ],
       \\"description\\": \\"Add a plugin. Multiple plugins can be passed as separate \`--plugin\`s.\\",
       \\"name\\": \\"plugins\\",
       \\"pluginDefaults\\": {},

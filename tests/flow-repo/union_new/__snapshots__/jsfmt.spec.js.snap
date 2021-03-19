@@ -625,7 +625,7 @@ function inst(a: A5 | A6) {}
 
 class B5 {}
 class B6 {}
-inst([new B6()]);
+inst([ new B6() ]);
 
 type A5 = B5[];
 type A6 = B6[];
@@ -791,7 +791,7 @@ type B5 = string;
 
 function tup(a: [number, boolean] | [string, boolean]) {}
 
-tup((["", false]: A6));
+tup(([ "", false ]: A6));
 
 type A6 = [B6, boolean];
 type B6 = string;
@@ -860,7 +860,7 @@ type B1 = string;
 
 function arr(a: number[] | string[]) {}
 
-arr(([]: A2));
+arr(([ ]: A2));
 
 type A2 = B2[];
 
@@ -942,7 +942,7 @@ type B1 = string;
 
 function arr(a: number[] | string[]) {}
 
-const a2 = ([]: A2);
+const a2 = ([ ]: A2);
 arr(a2);
 
 function arr_set(x: string, i: number) {
@@ -1021,7 +1021,7 @@ function fun_call(x: string): string {
 
 function arr(a: number[] | string[]) {}
 
-var a2 = [];
+var a2 = [ ];
 arr(a2);
 
 function arr_set(x: string, i: number) {
@@ -1407,10 +1407,10 @@ check_obj({ x: id("") });
 function check_arr(_: number[] | string[]) {}
 
 // help! (unlike objects, array literals' element types are always open)
-check_arr([""]);
+check_arr([ "" ]);
 
 // help!
-check_arr([id("")]);
+check_arr([ id("") ]);
 
 //////////////////////////////////////
 // generic class instance annotations
@@ -1707,9 +1707,9 @@ printWidth: 80
 
 // Array#concat
 
-[].concat([]);
+[ ].concat([ ]);
 
-([].concat([0, 1])[1]: string);
+([ ].concat([ 0, 1 ])[1]: string);
 
 ================================================================================
 `;
@@ -1814,13 +1814,13 @@ printWidth: 80
 
 // Array#reduce
 
-[0, 1].reduce((x, y, i) => y);
+[ 0, 1 ].reduce((x, y, i) => y);
 
-["a", "b"].reduce((regex, representation, index) => {
+[ "a", "b" ].reduce((regex, representation, index) => {
   return regex + (index ? "|" : "") + "(" + representation + ")";
 }, "");
 
-[""].reduce((acc, str) => acc * str.length);
+[ "" ].reduce((acc, str) => acc * str.length);
 
 ================================================================================
 `;

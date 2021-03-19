@@ -209,7 +209,7 @@ bigN * -1n;
 2n >= 2;
 // ↪ true
 
-const mixed = [4n, 6, -12n, 10, 4, 0, 0n];
+const mixed = [ 4n, 6, -12n, 10, 4, 0, 0n ];
 // ↪  [4n, 6, -12n, 10, 4, 0, 0n]
 
 mixed.sort();
@@ -1007,7 +1007,7 @@ var profile = <div>
 var profile = (
   <div>
     <img src="avatar.png" className="profile" />
-    <h3>{[user.firstName, user.lastName].join(" ")}</h3>
+    <h3>{[ user.firstName, user.lastName ].join(" ")}</h3>
   </div>
 );
 
@@ -1929,7 +1929,7 @@ printWidth: 80
 const tuple1 = #[1, 2, 3];
 
 =====================================output=====================================
-const tuple1 = #[1, 2, 3];
+const tuple1 = #[ 1, 2, 3 ];
 
 ================================================================================
 `;

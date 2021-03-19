@@ -1358,7 +1358,7 @@ $ yarn add --dev eslint-config-prettier
 
 \`\`\`json
 {
-  "extends": ["prettier"]
+  "extends": [ "prettier" ]
 }
 \`\`\`
 
@@ -1383,7 +1383,7 @@ and add this config to your \`package.json\`:
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,json,css}": ["prettier --write", "git add"]
+    "*.{js,json,css}": [ "prettier --write", "git add" ]
   }
 }
 \`\`\`
@@ -3337,7 +3337,7 @@ $ yarn add --dev eslint-config-prettier
 
 \`\`\`json
 {
-  "extends": ["prettier"]
+  "extends": [ "prettier" ]
 }
 \`\`\`
 
@@ -3362,7 +3362,7 @@ and add this config to your \`package.json\`:
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,json,css}": ["prettier --write", "git add"]
+    "*.{js,json,css}": [ "prettier --write", "git add" ]
   }
 }
 \`\`\`

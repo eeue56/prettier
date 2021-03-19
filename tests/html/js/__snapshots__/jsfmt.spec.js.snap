@@ -348,7 +348,7 @@ printWidth: 80
   > {
     constructor() {
       super();
-      this.state = { data: [] };
+      this.state = { data: [ ] };
     }
     fetchComments() {
       $.ajax({

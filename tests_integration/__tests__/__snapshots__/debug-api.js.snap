@@ -5,8 +5,8 @@ exports[`API prettier.formatDoc 1`] = `
   group([
     \\"const\\",
     \\" \\",
-    group([group(\\"foo\\"), \\" =\\", group(indent([line, '\\"bar\\"']))]),
-    indent([]),
+    group([ group(\\"foo\\"), \\" =\\", group(indent([ line, '\\"bar\\"' ])) ]),
+    indent([ ]),
     \\";\\",
   ]),
   hardline,

@@ -28,7 +28,7 @@ function printArray(path, options, print) {
   const closeBracket = "]";
   if (node.elements.length === 0) {
     if (!hasComment(node, CommentCheckFlags.Dangling)) {
-      parts.push(openBracket, closeBracket);
+      parts.push(openBracket, ' ', closeBracket);
     } else {
       parts.push(
         group([
@@ -97,7 +97,7 @@ function printArray(path, options, print) {
         [
           openBracket,
           indent([
-            softline,
+            options.bracketSpacing ? line : softline,
             shouldUseConciseFormatting
               ? printArrayItemsConcisely(path, options, print, trailingComma)
               : [
@@ -106,7 +106,7 @@ function printArray(path, options, print) {
                 ],
             printDanglingComments(path, options, /* sameIndent */ true),
           ]),
-          softline,
+          options.bracketSpacing ? line : softline,
           closeBracket,
         ],
         { shouldBreak, id: groupId }

@@ -186,7 +186,7 @@ class Foo {
 }
 
 class F {
-  constructor(public []) {}
+  constructor(public [ ]) {}
 }
 class G {
   constructor(public {}) {}

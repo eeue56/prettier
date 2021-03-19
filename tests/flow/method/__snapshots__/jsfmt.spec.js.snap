@@ -54,7 +54,7 @@ type Foo2 = {
 
 =====================================output=====================================
 class Foo1 {
-  flowParseFunctionTypeParams(params: N.FlowFunctionTypeParam[] = []): {
+  flowParseFunctionTypeParams(params: N.FlowFunctionTypeParam[] = [ ]): {
     params: N.FlowFunctionTypeParam[],
     rest: ?N.FlowFunctionTypeParam,
   } {

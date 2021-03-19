@@ -53,7 +53,7 @@ const result = template(\`
 });
 
 const output = template(\`function f() %%A%%\`)({
-  A: t.blockStatement([]),
+  A: t.blockStatement([ ]),
 });
 
 ================================================================================

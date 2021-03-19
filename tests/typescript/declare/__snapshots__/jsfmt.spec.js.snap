@@ -73,7 +73,7 @@ declare namespace A {
   function y(): void;
 }
 
-declare function f([]?);
+declare function f([ ]?);
 
 ================================================================================
 `;
@@ -122,9 +122,9 @@ declare interface Dictionary<T> {
 }
 
 declare interface B {
-  foo([]?): void;
-  bar({}, []?): any;
-  baz(a: string, b: number, []?): void;
+  foo([ ]?): void;
+  bar({}, [ ]?): any;
+  baz(a: string, b: number, [ ]?): void;
 }
 
 ================================================================================

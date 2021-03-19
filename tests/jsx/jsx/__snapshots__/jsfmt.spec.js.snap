@@ -373,7 +373,7 @@ singleQuote: false
   }
   propArray={
     // comment
-    [el1, el2]
+    [ el1, el2 ]
   }
   propObj={
     // comment
@@ -449,7 +449,7 @@ singleQuote: false
   }
   propArray={
     // comment
-    [el1, el2]
+    [ el1, el2 ]
   }
   propObj={
     // comment
@@ -525,7 +525,7 @@ singleQuote: true
   }
   propArray={
     // comment
-    [el1, el2]
+    [ el1, el2 ]
   }
   propObj={
     // comment
@@ -601,7 +601,7 @@ singleQuote: true
   }
   propArray={
     // comment
-    [el1, el2]
+    [ el1, el2 ]
   }
   propObj={
     // comment

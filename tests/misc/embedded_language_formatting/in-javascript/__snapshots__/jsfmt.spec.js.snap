@@ -32,7 +32,7 @@ html\`<a>\`;
 
 @Component({
   template: \`<a>\`,
-  styles: [\`a { }\`],
+  styles: [ \`a { }\` ],
 })
 class TestComponent {}
 

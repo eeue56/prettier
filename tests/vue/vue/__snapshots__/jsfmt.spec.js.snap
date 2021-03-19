@@ -105,7 +105,12 @@ semi: false
       yetAnotherLongLongProp,
     } of longLongLongLongLongLongLongLongList"
     v-for="(
-      [longLongProp, longLongProp, anotherLongLongProp, yetAnotherLongLongProp],
+      [
+        longLongProp,
+        longLongProp,
+        anotherLongLongProp,
+        yetAnotherLongLongProp,
+      ],
       index
     ) of longLongLongLongLongLongLongLongList"
     v-for="(
@@ -283,8 +288,8 @@ semi: false
     v-for="n in evenNumbers"
     v-for="n in even(numbers)"
     v-for="n in 10"
-    v-for="{ a } in [0].map(() => ({ a: 1 }))"
-    v-for="({ a }, [c]) in [0].map(() => 1)"
+    v-for="{ a } in [ 0 ].map(() => ({ a: 1 }))"
+    v-for="({ a }, [ c ]) in [ 0 ].map(() => 1)"
     v-for="n in items.map((x) => {
       return x
     })"
@@ -471,7 +476,12 @@ trailingComma: "none"
       yetAnotherLongLongProp
     } of longLongLongLongLongLongLongLongList"
     v-for="(
-      [longLongProp, longLongProp, anotherLongLongProp, yetAnotherLongLongProp],
+      [
+        longLongProp,
+        longLongProp,
+        anotherLongLongProp,
+        yetAnotherLongLongProp
+      ],
       index
     ) of longLongLongLongLongLongLongLongList"
     v-for="(
@@ -649,8 +659,8 @@ trailingComma: "none"
     v-for="n in evenNumbers"
     v-for="n in even(numbers)"
     v-for="n in 10"
-    v-for="{ a } in [0].map(() => ({ a: 1 }))"
-    v-for="({ a }, [c]) in [0].map(() => 1)"
+    v-for="{ a } in [ 0 ].map(() => ({ a: 1 }))"
+    v-for="({ a }, [ c ]) in [ 0 ].map(() => 1)"
     v-for="n in items.map((x) => {
       return x;
     })"
@@ -836,7 +846,12 @@ printWidth: 80
       yetAnotherLongLongProp,
     } of longLongLongLongLongLongLongLongList"
     v-for="(
-      [longLongProp, longLongProp, anotherLongLongProp, yetAnotherLongLongProp],
+      [
+        longLongProp,
+        longLongProp,
+        anotherLongLongProp,
+        yetAnotherLongLongProp,
+      ],
       index
     ) of longLongLongLongLongLongLongLongList"
     v-for="(
@@ -1014,8 +1029,8 @@ printWidth: 80
     v-for="n in evenNumbers"
     v-for="n in even(numbers)"
     v-for="n in 10"
-    v-for="{ a } in [0].map(() => ({ a: 1 }))"
-    v-for="({ a }, [c]) in [0].map(() => 1)"
+    v-for="{ a } in [ 0 ].map(() => ({ a: 1 }))"
+    v-for="({ a }, [ c ]) in [ 0 ].map(() => 1)"
     v-for="n in items.map((x) => {
       return x;
     })"

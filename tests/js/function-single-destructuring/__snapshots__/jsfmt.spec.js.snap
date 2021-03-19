@@ -63,7 +63,7 @@ function excludeFirstFiveResults3(
     fourthResult,
     fifthResult,
     ...rest
-  ] = [1, 2, 3, 4, 5]
+  ] = [ 1, 2, 3, 4, 5 ]
 ) {
   return rest;
 }
@@ -195,7 +195,7 @@ function StatelessFunctionalComponent2({
   onCancel = () => null,
   searchFilters = null,
   title = "",
-  items = [],
+  items = [ ],
 } = {}) {
   return <div />;
 }
@@ -209,7 +209,7 @@ function StatelessFunctionalComponent3(
     onCancel = () => null,
     searchFilters = null,
     title = "",
-    items = [],
+    items = [ ],
   } = {
     isActive: true,
   }

@@ -30,7 +30,7 @@ function f<T>(foo, bar = foo): [T, T] {
 
 =====================================output=====================================
 function f<T>(foo, bar = foo): [T, T] {
-  return [foo, bar];
+  return [ foo, bar ];
 }
 
 ================================================================================
@@ -245,8 +245,8 @@ function qux(x = "hello", ...y): string {
 }
 
 qux(0, 0); // Error, number ~> string
-qux(0, ...[42, ""]); // Error, number ~> string
-qux(0, ...["", 42]); // No error
+qux(0, ...[ 42, "" ]); // Error, number ~> string
+qux(0, ...[ "", 42 ]); // No error
 
 module.exports = qux;
 
@@ -421,7 +421,7 @@ foo(123, true); // ERROR boolean ~> string
 /* @flow */
 
 function foo(x?: number, ...y: Array<string>): [?number, Array<string>] {
-  return [x, y];
+  return [ x, y ];
 }
 
 foo(); // OK

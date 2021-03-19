@@ -125,7 +125,7 @@ setTimeout(function () {
   thing();
 }, 500);
 
-["a", "b", "c"].reduce(function (item, thing) {
+[ "a", "b", "c" ].reduce(function (item, thing) {
   return thing + " " + item;
 }, "letters:");
 
@@ -214,7 +214,7 @@ somthing.reduce(function (item, thing) {
 
 somthing.reduce(function (item, thing) {
   return thing.push(item);
-}, []);
+}, [ ]);
 
 reallyLongLongLongLongLongLongLongLongLongLongLongLongLongLongMethod(
   (f, g, h) => {
@@ -253,7 +253,7 @@ compose(
   (a) => {
     return a.thing;
   },
-  (b) => [1, 2, 3, 4, 5]
+  (b) => [ 1, 2, 3, 4, 5 ]
 );
 
 renderThing(
